@@ -16,6 +16,15 @@ The data layer is made of repositories that each can contain zero to many data s
 The domain layer is an optional layer that sits between the UI and data layers.
 The domain layer is responsible for encapsulating complex business logic, or simple business logic that is reused by multiple ViewModels. This layer is optional because not all apps will have these requirements. You should use it only when needed—for example, to handle complexity or favor reusability
 
+## Leaks application will be used to fix memory leaks within the kotlin app
+
+* In the mix of things as i was following arround tutorials 
+i was able to link my application to google play service 
+that allows a one-tap to buy a recipe from the app but it is still something am looking into 
+considering we still have cat 2 which is a continuation of this.
+It has been commented out because it someting that i am still working on but it is located in the mealsScreen.kt file
+
+
 ## Tech Stack
  - [Kotlin](https://kotlinlang.org/docs/reference/) - Kotlin is a cross-platform, statically typed, general-purpose programming language with type inference. Kotlin is designed to interoperate fully with Java, and the JVM version of Kotlin's standard library depends on the Java Class Library, but type inference allows its syntax to be more concise
  
@@ -46,11 +55,4 @@ The domain layer is responsible for encapsulating complex business logic, or sim
 This application fetches its data from the [The Meal Db](https://www.themealdb.com/api.php). Find the Documentation by following this [link](https://www.themealdb.com/api.php).
 
   ```
-## Leaks application will be used to fix memory leaks within the kotlin app
-
-* In the mix of things as i was following arround tutorials 
-i was able to link my application to google play service 
-that allows a one-tap to buy a recipe from the app but it is still something am looking into 
-considering we still have cat 2 which is a continuation of this.
-It has been commented out because it someting that i am still working on but it is located in the mealsScreen.kt file
 
