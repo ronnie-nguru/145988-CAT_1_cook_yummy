@@ -46,9 +46,9 @@ The domain layer is responsible for encapsulating complex business logic, or sim
 This application fetches its data from the [The Meal Db](https://www.themealdb.com/api.php). Find the Documentation by following this [link](https://www.themealdb.com/api.php).
 
   ```
-Leaks application will be used to fix memory leaks within the kotlin app
+## Leaks application will be used to fix memory leaks within the kotlin app
 
-In the mix of things as i was following arround tutorials 
+* In the mix of things as i was following arround tutorials 
 i was able to link my application to google play service 
 that allows a one-tap to buy a recipe from the app but it is still something am looking into 
 considering we still have cat 2 which is a continuation of this.
