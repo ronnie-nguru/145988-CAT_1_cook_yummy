@@ -6,6 +6,7 @@ import com.flexcode.yummy.data.remote.dto.MealsDto
 import retrofit2.http.GET
 import retrofit2.http.Query
 
+
 interface ApiService {
 
     @GET("json/v1/1/search.php?")

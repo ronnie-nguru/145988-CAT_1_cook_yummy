@@ -13,6 +13,7 @@ import retrofit2.HttpException
 import java.io.IOException
 import javax.inject.Inject
 
+
 class CategoriesRepositoryImpl @Inject constructor(
     private val apiService: ApiService,
     private val dao: CategoriesDao,

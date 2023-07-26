@@ -2,6 +2,7 @@ package com.flexcode.yummy.data.remote.dto
 
 import com.google.gson.annotations.SerializedName
 
+
 data class MealsDto(
     @SerializedName("idMeal") var idMeal: Int? = null,
     @SerializedName("strMeal") var strMeal: String? = null,

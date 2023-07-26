@@ -6,6 +6,7 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import com.flexcode.yummy.data.local.entity.CategoriesEntity
 
+
 @Dao
 interface CategoriesDao {
 

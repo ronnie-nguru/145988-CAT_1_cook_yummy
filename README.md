@@ -55,4 +55,87 @@ It has been commented out because it someting that i am still working on but it 
 This application fetches its data from the [The Meal Db](https://www.themealdb.com/api.php). Find the Documentation by following this [link](https://www.themealdb.com/api.php).
 
   ```
+Part 2:
+What is Room ?
 
+The room persistence library it is an abstraction layer over SQLite.
+
+The room is an ORM ( Object Relational Mapper ) for SQLite database in Android. It is part of the Architecture Components.
+
+The room makes using SQLite much easier for you by implementing annotations.
+
+Why use Room ?
+
+. Compile Time Verification
+
+In SQLite database if query has any error then it will cause Run-time exception. If we use Room then it will check the query at compile time itself. So that we can prevent the app from Run- time exception.
+
+. Boilerplate Code
+
+To convert the data from SQLite to DTO ( Data Transfer Object ) we need to write lot of codes. Those are internally managed by ROOM. So we don’t need to write the convertion code.
+
+.Easily integrated with other Architecture components
+
+Room is an Android Architecture component. So it can provide the data as observable like LiveData or RxJava’s Single object directly.
+
+There are 3 main components are there in Room database.
+
+1. Database
+2. Dao
+3. Entity
+
+Entity
+
+Represents a table within the database. Room creates a table for each class that has entity annotation, the fields in the class correspond to columns in the table. Therefore, the entity classes tend to be small model classes that don’t contain any logic.
+
+Some useful annotations and their attributes :
+— Foreign keys : names of foreign keys
+
+— Indices : list of indicates on the table
+
+— Primary keys : names of entity primary keys
+
+— table name
+
+Primary Key as its name indicates, this annotation points the primary key of the entity.autoGenerate — if set to true, then sqlite will be generating a unique id for the column
+
+!! PrimaryKey(autoGenerate = true )
+
+ColumnInfo allows specifying custom information about column
+
+!!ColumnInfo(name = “column_name”)
+
+Ignore field will not be persisted by Room
+
+Embeded nested fields can be referenced directly in the SQL queries.
+
+Database
+
+To create a database in Room, we need to create an class and annotate it with database. To create the database we need to give what are all the tables should be there in this db and db version in the annotation.
+
+Dao
+
+To access database content we need to create data access object using an interface with Dao annotation. Inside this interface we need to create the methods required for db operations.
+
+Here we can user 4 annotation :
+
+Query
+Insert
+Update
+Delete
+
+Query to run raw query we need to user this annotation. Inside we need to pass the query.
+
+1. Insert the data into database
+
+2. Update the data into database
+
+3. Delete the record from Database
+
+Why Room Database over SQLite Database ?
+
+Compile — time verification of Sql queries, so there is no more syntax errors at run time.
+Very less code to write.
+Support to integrate with other Architecture components.
+
+The DB Base Url link is in the Constants.kt in the common-main-java directory

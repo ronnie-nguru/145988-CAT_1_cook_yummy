@@ -1,6 +1,7 @@
 package com.flexcode.yummy.data.di
 
 import com.flexcode.yummy.data.repository.CategoriesRepositoryImpl
+
 import com.flexcode.yummy.data.repository.MealsRepositoryImpl
 import com.flexcode.yummy.domain.repository.CategoriesRepository
 import com.flexcode.yummy.domain.repository.MealsRepository

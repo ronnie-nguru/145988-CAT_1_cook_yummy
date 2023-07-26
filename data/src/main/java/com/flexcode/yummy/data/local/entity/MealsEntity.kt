@@ -4,6 +4,7 @@ import androidx.room.Entity
 import androidx.room.Index
 import androidx.room.PrimaryKey
 
+
 @Entity(indices = [Index(value = ["strSource"], unique = true)])
 data class MealsEntity(
     @PrimaryKey val idMeal: Int? = null,

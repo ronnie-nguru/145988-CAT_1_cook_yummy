@@ -4,6 +4,7 @@ import com.flexcode.yummy.data.local.entity.CategoriesEntity
 import com.flexcode.yummy.data.remote.dto.CategoriesDto
 import com.flexcode.yummy.domain.models.Categories
 
+
 fun CategoriesEntity.toCategories(): Categories {
     return Categories(
         idCategory = idCategory,

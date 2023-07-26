@@ -2,7 +2,8 @@ package com.flexcode.yummy.data.remote.mapper
 
 import com.flexcode.yummy.data.local.entity.MealsEntity
 import com.flexcode.yummy.data.remote.dto.MealsDto
-import com.flexcode.yummy.domain.models.Meals
+import com.flexcode.yummy.domain.models.Meal
+s
 
 fun MealsEntity.toMeals(): Meals {
     return Meals(

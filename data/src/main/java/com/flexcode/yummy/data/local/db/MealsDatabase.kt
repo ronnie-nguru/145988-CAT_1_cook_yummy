@@ -7,6 +7,7 @@ import com.flexcode.yummy.data.local.dao.MealsDao
 import com.flexcode.yummy.data.local.entity.CategoriesEntity
 import com.flexcode.yummy.data.local.entity.MealsEntity
 
+
 @Database(
     entities = [MealsEntity::class, CategoriesEntity::class], version = 9, exportSchema = false
 )
